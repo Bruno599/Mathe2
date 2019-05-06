@@ -18,6 +18,7 @@ public:
 	double getValue(int position);
 	void setValue(double value, int position);
 	double getLength();
+	//void Printvec();
 
 };
 

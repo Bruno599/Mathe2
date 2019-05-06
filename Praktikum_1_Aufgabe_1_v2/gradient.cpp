@@ -8,7 +8,6 @@ public:
 	double G(CMyVector test);
 	double(*funktion)(CMyVector);
 
-	
 
 	CMyVector gradient(CMyVector test, double(*funktion)(CMyVector test))
 	{
@@ -17,11 +16,12 @@ public:
 		double h = 1e-8;
 
 		gradient = test;
+		double funkvonF = funktion(test);
 		 
 		for (int index = 0; index < gradient.getDimension; index++)
 		{
 			gradient.setValue(gradient.getValue(index)+h, index);	//um die Wackelei zu beginnen 
-			gradient.setValue((funktion(gradient) - funktion(test)) / h, index);
+			gradient.setValue((funktion(gradient) - funkvonF) / h, index);
 			gradient.setValue(test.getValue(index), index);			//um die Wackelei wieder aus der dimension zu nehmen
 		}
 		return gradient;

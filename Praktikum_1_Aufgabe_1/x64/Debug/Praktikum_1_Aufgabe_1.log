@@ -1,0 +1,4 @@
+﻿  CMyVector.cpp
+  main.cpp
+c:\users\bruno\documents\repositiry\mathe2\praktikum_1_aufgabe_1\main.cpp(18): error C2110: "+": Zwei Zeiger können nicht addiert werden
+  Code wird generiert...
