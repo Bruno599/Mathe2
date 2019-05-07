@@ -39,9 +39,6 @@ double CMyVector::getLength()
 	return sqrt(length);
 }
 
-
-
-
 CMyVector operator+(CMyVector a, CMyVector b) 
 {
 

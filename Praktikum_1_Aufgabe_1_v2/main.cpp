@@ -60,7 +60,7 @@ void gradientenverfahren(CMyVector test, double(*funktion)(CMyVector test), doub
 	std::vector<double> v;
 	CMyVector oldvector(test.getDimension(), v);
 	CMyVector newvector(test.getDimension(), v);
-	//CMyVector gradient1(test.getDimension, v);
+	CMyVector gradient1(test.getDimension, v);
 	CMyVector testvector(test.getDimension(), v);
 
 	double lamda = wertfuerlamda;
@@ -72,16 +72,16 @@ void gradientenverfahren(CMyVector test, double(*funktion)(CMyVector test), doub
 	for (int schritt = 0; schritt <= 25; schritt++)
 	{
 		newvector = oldvector + lamda * gradient(oldvector, funktion);
-		
-
-		
+	
 		if (newvector.getLength() < 1e-5)
 		{
 			//newvector.
 			break;
 		}
-		Print(schritt, oldvector, lamda, funktion(oldvector), gradient(oldvector, funktion), newvector.getLength(), newvector, funktion(newvector));
 
+		gradient1 = gradient(test, funktion);
+
+		Print(schritt, oldvector, lamda, funktion(oldvector), gradient(oldvector, funktion), newvector.getLength(), newvector, funktion(newvector));
 
 		if (funktion(newvector) > funktion(oldvector))
 		{
@@ -126,11 +126,6 @@ void gradientenverfahren(CMyVector test, double(*funktion)(CMyVector test), doub
 			continue;
 		}
 	}
-
-	
-
-
-	
 }
 /*double CMyVector::getLength()
 {
@@ -179,7 +174,6 @@ double G(CMyVector test)
 
 int main()
 {
-
 	std::vector<double> v;
 
 	CMyVector vector1(2, v);
