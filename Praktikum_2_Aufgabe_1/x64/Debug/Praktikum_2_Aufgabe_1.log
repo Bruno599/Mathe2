@@ -1,0 +1,11 @@
+﻿  main2.cpp
+c:\users\test\documents\repo\mathe2\praktikum_2_aufgabe_1\main2.cpp(17): error C2664: "CMyMatrix::CMyMatrix(CMyMatrix &&)" : Konvertierung von Argument 3 von "std::vector<double,std::allocator<_Ty>>" in "std::vector<CMyVector *,std::allocator<_Ty>>" nicht möglich
+          with
+          [
+              _Ty=double
+          ]
+          and
+          [
+              _Ty=CMyVector *
+          ]
+  c:\users\test\documents\repo\mathe2\praktikum_2_aufgabe_1\main2.cpp(17): note: Kein benutzerdefinierter Konvertierungsoperator verfügbar, der diese Konvertierung durchführen kann, oder der Operator kann nicht aufgerufen werden
