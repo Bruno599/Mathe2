@@ -3,25 +3,66 @@
 
 using namespace std;
 
-CMyMatrix jacobi(const CMyVektor &x, CMyVektor (*funktion)(CMyVektor));   //como friend-> error de compiler "C3767"
 
-void newtonverfahren(CMyVektor x, CMyVektor (*funktion)(CMyVektor));  //libro pagina 22
+
+CMyMatrix jacobi(const CMyVektor &x, CMyVektor (*funktion)(CMyVektor));   
+
+void newtonverfahren(CMyVektor x, CMyVektor (*funktion)(CMyVektor));  
 
 void gradientenverfahren(CMyVektor x, double(*funktion)(CMyVektor), double lambda = 1.0);
 
+CMyVektor f(CMyVektor x) 
+{
+	CMyVektor a(3);
+	
+	a.set_wert(0, x[0] * x[1] * exp(x[2]));
+	a.set_wert(1, x[1] * x[2] * x[3]);
+	a.set_wert(2, x[3]);
+
+	return a;
+}
+
+CMyVektor g(CMyVektor y)
+{
+	CMyVektor b(2);
+
+	b.set_wert(0, pow(y[0], 3) * pow(y[1], 3) - 2 * y[1]);
+	b.set_wert(1, y[0] - 2);
+
+	return b;
+}
 
 int main() {
 
-    cout << "Aufgabe_2 :\n" << jacobi(CMyVektor{{1, 2, 0, 3}},
-                   [](CMyVektor x) -> CMyVektor { return {{x[0] * x[1] * exp(x[2]), x[1] * x[2] * x[3], x[3]}}; })
-         << endl;
+	int auswahl = 0;
 
-    newtonverfahren({{1, 1}},
-                    [](CMyVektor x) -> CMyVektor { return {{pow(x[0], 3) * pow(x[1], 3) - 2 * x[1], x[0] - 2}}; });
+	CMyVektor y(4);
+	CMyVektor z(2);
+
+	y.set_wert(0, 1);
+	y.set_wert(1, 2);
+	y.set_wert(2, 0);
+	y.set_wert(3, 3);
+
+	z.set_wert(0, 1);
+	z.set_wert(1, 1);
+
+	cout << "Aufgabe_2 :\n" << jacobi(y, f) << endl;;
+
+	newtonverfahren(z, g);
+
+		/*
+	cout << "inverse Berechnen, wenn ja bitte 1 eingeben." << endl;
+	cin >> auswahl;
+
+	if (auswahl == 1)
+	{
+		invers
+	}
+
+	*/
 	system("Pause");
 	return 0;
-
-
 }
 
 CMyVektor gradient(const CMyVektor &x, double(*funktion)(CMyVektor))
@@ -158,7 +199,7 @@ void newtonverfahren(CMyVektor x, CMyVektor(*funktion)(CMyVektor)) //libro pagin
 				<< "\n\t f(x) = " << funktion_x
 				<< "\n\t ||f(x) || = " << funktionLaenge << std::endl;
 		}
-		else if (funktionLaenge < pow(10, -5))
+		else if (funktionLaenge < 1e-5)
 		{
 			std::cout << "Ende wegen ||f(x)||<1e-5 bei";
 			std::cout << "\n\t x = " << x

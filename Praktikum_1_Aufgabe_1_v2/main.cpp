@@ -1,13 +1,13 @@
 #include "CMyVector.h"
 //#include "gradient.cpp"
 
-/*double F(CMyVector test);
+double F(CMyVector test);
 double G(CMyVector test);
 double(*funktion)(CMyVector);
 
 double(*ptrf)(CMyVector test) = F;
 double(*ptrg)(CMyVector test) = G;
-*/
+
 void Printvec(CMyVector test)
 {
 	int j = 0;
@@ -195,7 +195,7 @@ double betragvector(CMyVector test)
 };
 */
 
-/*
+
 double F(CMyVector test)
 {
 	return sin(test.getValue(0)*test.getValue(1)) + sin(test.getValue(0)) + cos(test.getValue(1));
@@ -207,7 +207,7 @@ double G(CMyVector test)
 		+ test.getValue(1)*test.getValue(1) + test.getValue(2)*test.getValue(2) - 2 * test.getValue(0)
 		- 4 * test.getValue(2));
 }
-*/
+
 
 int main()
 {
