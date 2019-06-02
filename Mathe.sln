@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Praktikum_2_Aufgabe_1_v2", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Praktikum_2_Aufgabe_1_v3", "Praktikum_2_Aufgabe_1_v3\Praktikum_2_Aufgabe_1_v3.vcxproj", "{88C5395D-F70C-4E44-BD04-98C214973C0B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Praktikum_3_Aufgabe_1", "Praktikum_3_Aufgabe_1\Praktikum_3_Aufgabe_1.vcxproj", "{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{88C5395D-F70C-4E44-BD04-98C214973C0B}.Release|x64.Build.0 = Release|x64
 		{88C5395D-F70C-4E44-BD04-98C214973C0B}.Release|x86.ActiveCfg = Release|Win32
 		{88C5395D-F70C-4E44-BD04-98C214973C0B}.Release|x86.Build.0 = Release|Win32
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Debug|x64.ActiveCfg = Debug|x64
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Debug|x64.Build.0 = Debug|x64
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Debug|x86.ActiveCfg = Debug|Win32
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Debug|x86.Build.0 = Debug|Win32
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Release|x64.ActiveCfg = Release|x64
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Release|x64.Build.0 = Release|x64
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Release|x86.ActiveCfg = Release|Win32
+		{FEAB850D-C9F9-4FA7-86AB-857C5AD5C755}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
