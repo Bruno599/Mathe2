@@ -42,11 +42,15 @@ int main()
 	V2.set_wert(2, 2);
 
 
-	C_DGLSolver Solve(F);
+	C_DGLSolver Solve(G);
 
 	//Solve.C_DGLSolver_Euler(0, 2, 100, V1);
 
-	Solve.C_DGLSolver_Heun(0, 2, 100, V1);
+	//Solve.C_DGLSolver_Euler(1, 2, 10, V2);
+
+	//Solve.C_DGLSolver_Heun(0, 2, 100, V1);
+
+	//Solve.C_DGLSolver_Heun(1, 2, 100, V2);
 
 	system("PAUSE");
 

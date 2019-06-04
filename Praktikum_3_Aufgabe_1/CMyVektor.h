@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <cmath>
+#include <string>
 
 class CMyVektor {
 private:
@@ -20,6 +21,8 @@ public:
     double get_wert(int index) const;
 
     double &operator[](int index);
+
+	std::string toString();
 
     double laenge() const;  //Länge des Vektors
     friend std::ostream &operator<<(std::ostream &os, const CMyVektor &v);      //vektor ausgeben

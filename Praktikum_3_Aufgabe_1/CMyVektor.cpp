@@ -1,5 +1,7 @@
 #include "CMyVektor.h"
 
+
+
 CMyVektor::CMyVektor(int dimension) : dimension{dimension} 
 { 
 	werte.resize(dimension); 
@@ -49,3 +51,22 @@ CMyVektor operator*(double lambda, CMyVektor a)
     return a;
 }
 
+std::string CMyVektor::toString()
+{
+	std::string result = "( ";
+
+	for (int i = 0; i < dimension; i++)
+	{
+		result += std::to_string(this->get_wert(i));
+		if (i < this->dimension - 1)
+		{
+			result += "; ";
+		}
+
+	}
+
+	result += ")";
+
+	return result;
+
+}
