@@ -115,10 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CLotto.h" />
     <ClInclude Include="CZufall.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CLotto.cpp" />
     <ClCompile Include="CZufall.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

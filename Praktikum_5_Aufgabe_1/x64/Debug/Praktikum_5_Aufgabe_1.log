@@ -1,0 +1,7 @@
+﻿  CLotto.cpp
+c:\users\test\documents\repo\mathe2\praktikum_5_aufgabe_1\clotto.h(15): warning C4244: "Argument": Konvertierung von "time_t" in "int", möglicher Datenverlust
+  main.cpp
+c:\users\test\documents\repo\mathe2\praktikum_5_aufgabe_1\czufall.h(7): error C2011: "CZufall": "class" Typneudefinition
+  c:\users\test\documents\repo\mathe2\praktikum_5_aufgabe_1\czufall.h(6): note: Siehe Deklaration von "CZufall"
+c:\users\test\documents\repo\mathe2\praktikum_5_aufgabe_1\clotto.h(9): error C2079: "CLotto::generator" verwendet undefiniertes class "CZufall"
+  Code wird generiert...

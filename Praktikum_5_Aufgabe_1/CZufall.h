@@ -6,10 +6,10 @@
 class CZufall
 {
 private:
-	int n;
-
+	//int n;
 
 public:
+	CZufall(){};
 	void initialisiere(int n); 
 	//void srand(int n);
 
