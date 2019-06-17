@@ -1,0 +1,8 @@
+﻿  main.cpp
+c:\users\test\documents\repo\mathe2\praktikum_5_aufgabe_1\clotto.h(15): warning C4244: "Argument": Konvertierung von "time_t" in "int", möglicher Datenverlust
+  Code wird generiert.
+  1 of 131 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Codegenerierung ist abgeschlossen.
+  Praktikum_5_Aufgabe_1.vcxproj -> C:\Users\Test\Documents\Repo\Mathe2\x64\Release\Praktikum_5_Aufgabe_1.exe

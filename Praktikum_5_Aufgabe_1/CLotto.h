@@ -14,22 +14,22 @@ public:
 
 	CLotto(int n) { n < 0 ? this->generator.initialisiere(time(NULL)) : this->generator.initialisiere(n); tippzettel.resize(6, 0); };
 
-
-
 	void setTipp();
 
-	std::vector<int> sechsAus49()
-	{
-		std::vector<int> ziehung;
-		ziehung.resize(6, 0);
+	void setTipp_manual(int a, int b, int c, int d, int e, int f);
 
-		for (int i = 6; i == 1; i--)
-		{
-			ziehung.at(i % 6) = this->generator.wert(i, 43 + i);
-		}
+	std::vector<int> sechsAus49();
 
-		return ziehung;
-	};
+	std::vector<int> sixOutOfFortynine();
+
+	std::vector<int> pruefe_tipp_mit_vector();
+
+	int pruefe_tipp();
+
+	int pruefe_2malLotto();
+
+	std::vector<int> pruefe_2malLotto_mit_vector();
+	
 
 
 };
