@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\test\documents\repo\mathe2\praktikum_4_aufgabe_1\main.cpp(79): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+c:\users\test\documents\repo\mathe2\praktikum_4_aufgabe_1\main.cpp(138): warning C4267: "Initialisierung": Konvertierung von "size_t" nach "int", Datenverlust möglich
+  Praktikum_4_Aufgabe_1.vcxproj -> C:\Users\Test\Documents\Repo\Mathe2\x64\Debug\Praktikum_4_Aufgabe_1.exe
